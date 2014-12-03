@@ -1,21 +1,24 @@
-h3.h3 Инструменты:
+//- h3.h3 Инструменты:
 +tools([
-	['bump', 'обновление версии проекта'],
-	['clean', 'очистка папки от файлов'],
-	['spritesmith', 'генератор спрайтов и CSS переменных'],
-	['imagemin', 'сжатие картинок'],
-	['stylus', 'препроцессор CSS'],
-	['autoprefixer', 'подстановка префиксов для заданных браузеров'],
-	['combine-media-queries', 'комбинирование медиа-запросов в CSS'],
-	['csscomb', 'форматирование CSS'],
-	['jade', 'препроцессор HTML'],
-	['prettify', 'форматирование HTML'],
-	['jshint', 'проверка JavaScript на качество кода с подсказками'],
-	['copy', 'создание копий файлов'],
-	['connect', 'сервер проекта'],
-	['watch', 'отслеживание изменений файлов и их компиляция']
+	['Полное ФИО', ' Петров Дмтрий Юрьевич'],
+	['Год рождения', ' 1984'],
+	['Место жительства', ' г. Севастополь, Россия'],
+	['Скайп', ' topwebmaster'],
+	['Почта', ' topwebmasterblog@gmail.com'],
+
 ])
 
+.webmaster
+	form
+		.checkbox Выпускник
+			a(href='//htmlacademy.ru')  htmlacademy.ru
+			input(type='radio' id='yes' value='yes' checked='checked')
+			label(for='yes') Да
+			input(type='radio' id='no' value='no' checked='no')
+			label(for='no') Нет
+
+
+div#slider2 слайдер
 h2.h2 СТРУКТУРА ФАЙЛОВ
 
 .container

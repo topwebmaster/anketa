@@ -7,9 +7,12 @@ mixin script(scripts)
 mixin tools(list)
 		ul.list
 			each item in list
-				li.list__item
-					span.mark= item[0]
-					= ' - ' + item[1]
+				li.list
+					span.item0= item[0]
+					.line-container
+						span.item1= item[1]
+						span.underline
+
 
 mixin file(file)
 	li.list__item.list__item_type_file= file
