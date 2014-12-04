@@ -12,20 +12,6 @@
 		<meta name="format-detection" content="address=no">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-		<link sizes="57x57" href="apple-touch-icon-57x57.png" rel="apple-touch-icon">
-		<link sizes="114x114" href="apple-touch-icon-114x114.png" rel="apple-touch-icon">
-		<link sizes="72x72" href="apple-touch-icon-72x72.png" rel="apple-touch-icon">
-		<link sizes="144x144" href="apple-touch-icon-144x144.png" rel="apple-touch-icon">
-		<link sizes="60x60" href="apple-touch-icon-60x60.png" rel="apple-touch-icon">
-		<link sizes="120x120" href="apple-touch-icon-120x120.png" rel="apple-touch-icon">
-		<link sizes="76x76" href="apple-touch-icon-76x76.png" rel="apple-touch-icon">
-		<link sizes="152x152" href="apple-touch-icon-152x152.png" rel="apple-touch-icon">
-		<link sizes="180x180" href="apple-touch-icon-180x180.png" rel="apple-touch-icon">
-		<link sizes="192x192" href="favicon-192x192.png" rel="icon" type="image/png">
-		<link sizes="160x160" href="favicon-160x160.png" rel="icon" type="image/png">
-		<link sizes="96x96" href="favicon-96x96.png" rel="icon" type="image/png">
-		<link sizes="16x16" href="favicon-16x16.png" rel="icon" type="image/png">
-		<link sizes="32x32" href="favicon-32x32.png" rel="icon" type="image/png">
 		<meta name="application-name" content="CSSSR Project Template">
 		<meta name="msapplication-tooltip" content="A template for a quick start.">
 		<meta name="msapplication-TileColor" content="#ffffff">
@@ -45,168 +31,183 @@
 	</head>
 	<body>
 		<div class="main">
+			<div class="secret"></div>
 			<div class="logo"></div><a href="/" title="home page"><h1 class="h1 case">Дело</h1></a>
+
 			<ul class="list">
-				<li class="list"><span class="item0">Полное ФИО</span>
-					<div class="line-container"><span class="item1"> Петров Дмтрий Юрьевич</span><span class="underline"></span>
+				<li class="list fio">
+					<span>Полное ФИО</span>
+					<div class="line-container">
+						<span class="item1"> Петров Дмтрий Юрьевич</span>
+						<span class="underline"></span>
 					</div>
 				</li>
-				<li class="list"><span class="item0">Год рождения</span>
-					<div class="line-container"><span class="item1"> 1984</span><span class="underline"></span>
+				<li class="list year">
+					<span>Год рождения</span>
+					<div class="line-container">
+						<span class="item1"> 1984</span>
+						<span class="underline"></span>
 					</div>
 				</li>
-				<li class="list"><span class="item0">Место жительства</span>
-					<div class="line-container"><span class="item1"> г. Севастополь, Россия</span><span class="underline"></span>
+				<li class="list city">
+					<span>Место жительства</span>
+					<div class="line-container">
+						<span class="item1"> г. Севастополь, Россия</span>
+						<span class="underline"></span>
 					</div>
 				</li>
-				<li class="list"><span class="item0">Скайп</span>
-					<div class="line-container"><span class="item1"> topwebmaster</span><span class="underline"></span>
+				<li class="list skype"><span>Скайп</span>
+					<div class="line-container">
+						<span class="item1"> topwebmaster</span>
+						<span class="underline"></span>
 					</div>
 				</li>
-				<li class="list"><span class="item0">Почта</span>
-					<div class="line-container"><span class="item1"> topwebmasterblog@gmail.com</span><span class="underline"></span>
+				<li class="list e-mail"><span>Почта</span>
+					<div class="line-container">
+						<span class="item1"> topwebmasterblog@gmail.com</span>
+						<span class="underline"></span>
 					</div>
+				</li>
+				<li>
+					<form>
+						Выпускник  <a href="//htmlacademy.ru"> htmlacademy.ru</a>
+						<input type="radio" id="yes" value="yes" name="htmlacademy">
+						<label for="yes">Да</label>
+						<input type="radio" id="no" value="no" name="htmlacademy">
+						<label for="no">Нет</label>
+					</form>
 				</li>
 			</ul>
 			<div class="webmaster">
-				<form>
-					<div class="checkbox">Выпускник<a href="//htmlacademy.ru"> htmlacademy.ru</a>
-						<input type="radio" id="yes" value="yes" checked="checked">
-						<label for="yes">Да</label>
-						<input type="radio" id="no" value="no" checked="no">
-						<label for="no">Нет</label>
+				<form class="form" method="post">
+					<div class="skills">
+						<header>
+							<h2>Практические навыки</h2>
+							<span>*</span>
+							<p>Отметьте только те технологии и типы задач, с которыми вы хорошо знакомы.
+								Отсутсвие опыта отнюдь не означает, что у вас меньше шансов стать нашим сотрудником.
+								Это означает, что вы будете получать те задачи, с которыми гарантировано будете с
+								правляться.
+							</p>
+						</header>
+						<div class="column1">
+							<ul>
+								<li>
+									<input id="methods-bam" type="checkbox" value="methods-bam">
+										<label for="methods-bam">Методология БЭМ</label>
+								</li>
+								<li>
+									<input id="jQuery" type="checkbox" value="jQuery" checked>
+										<label for="jQuery">jQuery</label>
+								</li>
+								<li>
+									<input id="GRUNT" type="checkbox" value="GRUNT" >
+										<label for="GRUNT">Использую GRUNT</label>
+								</li>
+								<li>
+									<input id="HAML" type="checkbox" value="HAML" >
+										<label for="HAML">HAML</label>
+								</li>
+								<li>
+									<input id="LESS" type="checkbox" value="LESS" checked>
+										<label for="LESS">LESS</label>
+								</li>
+								<li>
+									<input id="SASS" type="checkbox" value="SASS">
+										<label for="SASS">SASS</label>
+								</li>
+								<li>
+									<input id="CoffeeScript" type="checkbox" value="CoffeeScript">
+										<label for="CoffeeScript">CoffeeScript</label>
+								</li>
+							</ul>
+						</div>
+						<div class="column2">
+							<ul>
+								<li>
+									<input id="Jade" type="checkbox" value="Jade" checked>
+										<label for="Jade">Jade</label>
+								</li>
+								<li>
+									<input id="Stylus" type="checkbox" value="Stylus" checked>
+										<label for="Stylus">Stylus</label>
+								</li>
+								<li>
+									<input id="Angular" type="checkbox" value="Angular" checked>
+										<label for="Angular">Знаю (изучаю) Angular</label>
+								</li>
+								<li>
+									<input id="Android" type="checkbox" value="Android">
+										<label for="Android">Верстка под Android</label>
+								</li>
+								<li>
+									<input id="iOS" type="checkbox" value="iOS">
+										<label for="iOS">Верстка под iOS</label>
+								</li>
+								<li>
+									<input id="wphone" type="checkbox" value="wphone">
+										<label for="wphone">Верстка под Windows Phone</label>
+								</li>
+
+							</ul>
+						</div>
+						<div class="column3">
+							<ul>
+								<li>
+									<input id="layout-mailings" type="checkbox" value="layout-mailings">
+										<label for="layout-mailings">Верстка рассылок</label>
+								</li>
+								<li>
+									<input id="adaptive" type="checkbox" value="adaptive" checked>
+										<label for="adaptive">Адаптивная верстка</label>
+								</li>
+								<li>
+									<input id="dropbox" type="checkbox" value="dropbox" checked>
+										<label for="dropbox">Использую Dropbox</label>
+								</li>
+								<li>
+									<input id="gmail" type="checkbox" value="gmail" checked>
+										<label for="gmail">Использую Gmail</label>
+								</li>
+								<li>
+									<input id="github" type="checkbox" value="github" checked>
+										<label for="github">Использую GitHub</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="slider-container">
+						<input type="text" id="range" value="" name="range" />
 					</div>
 				</form>
+
 			</div>
-			<div id="slider2"></div>
-			<h2 class="h2">СТРУКТУРА ФАЙЛОВ</h2>
-			<div class="container">
-				<div class="col">
-					<h3 class="h3">Исходники</h3>
-					<ul class="list list_type_files">
-						<li class="list__item list__item_type_folder">images</li>
-						<li class="list__item list__item_type_folder">resources</li>
-						<li class="list__item list__item_type_folder">scripts
-							<ul class="list list_type_files">
-								<li class="list__item list__item_type_folder">libs
-									<ul class="list list_type_files">
-										<li class="list__item list__item_type_file">jquery.min.js</li>
-									</ul>
-								</li>
-								<li class="list__item list__item_type_file">common.js</li>
-								<li class="list__item list__item_type_file">debug.js</li>
-							</ul>
-						</li>
-						<li class="list__item list__item_type_folder">styles
-							<ul class="list list_type_files">
-								<li class="list__item list__item_type_folder">base
-									<ul class="list list_type_files">
-										<li class="list__item list__item_type_file">base.styl</li>
-										<li class="list__item list__item_type_file">fonts.styl</li>
-										<li class="list__item list__item_type_file">normalize.styl</li>
-									</ul>
-								</li>
-								<li class="list__item list__item_type_folder">components
-									<ul class="list list_type_files">
-										<li class="list__item list__item_type_file">fork.styl</li>
-									</ul>
-								</li>
-								<li class="list__item list__item_type_folder">helpers
-									<ul class="list list_type_files">
-										<li class="list__item list__item_type_file">mixins.styl</li>
-										<li class="list__item list__item_type_file">sprite.styl</li>
-										<li class="list__item list__item_type_file">variables.styl</li>
-									</ul>
-								</li>
-								<li class="list__item list__item_type_folder">block
-									<ul class="list list_type_files">
-										<li class="list__item list__item_type_file">main.styl</li>
-									</ul>
-								</li>
-								<li class="list__item list__item_type_folder">partials
-									<ul class="list list_type_files">
-										<li class="list__item list__item_type_file">footer.styl</li>
-										<li class="list__item list__item_type_file">header.styl</li>
-									</ul>
-								</li>
-								<li class="list__item list__item_type_file">common.styl</li>
-							</ul>
-						</li>
-						<li class="list__item list__item_type_folder">templates
-							<ul class="list list_type_files">
-								<li class="list__item list__item_type_folder">blocks
-									<ul class="list list_type_files">
-										<li class="list__item list__item_type_file">main.jade</li>
-									</ul>
-								</li>
-								<li class="list__item list__item_type_folder">helpers
-									<ul class="list list_type_files">
-										<li class="list__item list__item_type_file">mixins.jade</li>
-										<li class="list__item list__item_type_file">variables.jade</li>
-									</ul>
-								</li>
-								<li class="list__item list__item_type_folder">layouts
-									<ul class="list list_type_files">
-										<li class="list__item list__item_type_file">default.jade</li>
-									</ul>
-								</li>
-								<li class="list__item list__item_type_folder">pages
-									<ul class="list list_type_files">
-										<li class="list__item list__item_type_file">index.jade</li>
-									</ul>
-								</li>
-								<li class="list__item list__item_type_folder">partials
-									<ul class="list list_type_files">
-										<li class="list__item list__item_type_file">footer.jade</li>
-										<li class="list__item list__item_type_file">head.jade</li>
-										<li class="list__item list__item_type_file">header.jade</li>
-										<li class="list__item list__item_type_file">scripts.jade</li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-				<div class="col">
-					<div class="arrow-caption">Компиляция</div>
-					<div class="arrow"></div>
-				</div>
-				<div class="col">
-					<h3 class="h3">Готовые файлы</h3>
-					<ul class="list list_type_files">
-						<li class="list__item list__item_type_folder">assets
-							<ul class="list list_type_files">
-								<li class="list__item list__item_type_folder">images</li>
-								<li class="list__item list__item_type_folder">scripts
-									<ul class="list list_type_files">
-										<li class="list__item list__item_type_folder">libs
-											<ul class="list list_type_files">
-												<li class="list__item list__item_type_file">jquery.min.js</li>
-											</ul>
-										</li>
-										<li class="list__item list__item_type_file">common.js</li>
-										<li class="list__item list__item_type_file">debug.js</li>
-									</ul>
-								</li>
-								<li class="list__item list__item_type_folder">styles
-									<ul class="list list_type_files">
-										<li class="list__item list__item_type_file">common.css</li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li class="list__item list__item_type_file">index.html</li>
-					</ul>
-				</div>
+			<div class="sign">
+				<div class="date">Дата заполнения</div>
+				<span></span>
 			</div>
-			<!--.forka.fork__link(href='https://github.com/CSSSR/csssr-project-template') Fork me on GitHub
--->
-			<div class="copyright dark">©GC92, 2014</div>
-		</div>
-		<script src="assets/scripts/debug.js?1417547563498"></script>
-		<script src="assets/scripts/libs/jquery-1.11.1.js?1417547563498"></script>
-		<script src="assets/scripts/libs/jquery-ui-1.11.2.js?1417547563498"></script>
-		<script src="assets/scripts/libs/jquery-ui-slider-pips.js?1417547563498"></script>
-		<script src="assets/scripts/common.js?1417547563498"></script>
+</div>
+		<script src="assets/scripts/libs/jquery-1.11.1.js"></script>
+		<script src="assets/scripts/common.js"></script>
+		<script>
+			$(function () {
+
+				$("#range").ionRangeSlider({
+					grid_snap:true,
+					from_shadow:true,
+					hide_from_to:true,
+					hide_min_max: true,
+					grid: true,
+					from: 1,
+					values: [
+						"Не умею", "Использую готовые решения","Использую готовые решения</br> и умею их переделывать", "Пишу сложные скрипты"
+					]
+				});
+
+			});
+
+
+
+		</script>
 	</body>
 </html>
