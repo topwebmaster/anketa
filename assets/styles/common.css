@@ -220,17 +220,21 @@ body {
 
 }
 
- .fio
+ .fio>span
  {
 	font-family: "PT Sans Bold", sans-serif;
-	font-weight: bold;
+
 	font-size: 22.43pt;
 
 }
 
 .item1
 {
-	font-family: monospace, "Courier New";
+	font-family: "Courier New";
+	font-weight: normal;
+	font-style: normal;
+	font-size: 23pt;
+	text-align: center;
 }
 
 .main {
