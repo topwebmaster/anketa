@@ -216,16 +216,23 @@ body {
 
 	@font-face {
 		font-family: 'PT Sans Bold', sans-serif;
-		src: url(/assets/fonts/PT_Sans/PT_Sans-Web-Bold.ttf);
+		src: url("../fonts/PT_Sans/PT_Sans-Web-Bold.ttf");
 
 }
 
- .fio,
+ .fio
  {
 	font-family: "PT Sans Bold", sans-serif;
 	font-weight: bold;
+	font-size: 22.43pt;
 
 }
+
+.item1
+{
+	font-family: monospace, "Courier New";
+}
+
 .main {
 	margin-right: auto;
 	margin-left: auto;
@@ -379,7 +386,7 @@ body {
 	width: 750px;
 	height: 4px;
 	content: ' ';
-	background: url('/assets/images/range_line.png') repeat-x;
+	background: url('../images/range_line.png') repeat-x;
 }
 
 
@@ -558,7 +565,7 @@ header{
 }
 
 .secret{
-	background-image: url("/assets/images/secret.png");
+	background-image: url("../images/secret.png");
 	height: 121px;
 	width: 272px;
 	float: right;
