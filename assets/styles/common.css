@@ -43,6 +43,7 @@ hr {
 
 ul {
 	list-style: none;
+	width: 100%;
 }
 
 
@@ -61,9 +62,7 @@ body {
 }
 
 
-.webmaster{
-	height: 100%;
-}
+
 
 .h1 {
 	margin-right: -20px;
@@ -137,8 +136,10 @@ body {
 	background: url('../images/delo.png') no-repeat;
 }
 
-.list input[type=text],
-.list input[type=email]
+
+.list input[type=email],
+input[type=text],
+input[type=date]
 {
 	background: none;
 	border: none;
@@ -166,9 +167,7 @@ body {
 	display: block;
 }
 
-input[type="radio"] {
-display:none;
-}
+
 
 .list>li{
 
@@ -203,6 +202,7 @@ display:none;
 }
 .list .spec{
 	background: none;
+	margin-top: 40px;
 }
 
  .fio>p,
@@ -231,16 +231,52 @@ display:none;
 }
 
 
+input[type="radio"]
+{
+	display: none;
+}
+
+#no, #yes{
+    display:inline-block;
+    vertical-align:middle;
+    background:url("../images/no.png") no-repeat;
+    cursor:pointer;
+	width: 31px;
+	height: 32px;
+}
+
+
+.CheckBoxClass,.RadioClass{
+	display: none;
+}
+.CheckBoxLabelClass{
+	background-image: url("../images/uncheked.png");
+	background-repeat: no-repeat;
+
+	padding-left: 30px;
+	padding-top: 3px;
+	margin: 5px;
+	height: 28px;
+	display: block;
+}
+.CheckBoxLabelClass:hover, .RadioLabelClass:hover{
+	text-decoration: underline;
+}
+.LabelSelected{
+	background: url("../images/checked.png") no-repeat;
+}
+
+
 .skills{
 	padding-top: 20px;
 	display: inline-block;
+	margin-left: 40px;
 }
 
 .skills label{
-	font-size: 21pt;
+	font-size: 14pt;
 	font-family: PT Sans;
-	
-
+	font-weight: bold;
 }
 .column1,.column2,.column3{
 	width:33%;
@@ -254,6 +290,25 @@ header{
 
 .sign{
 	margin-bottom: 0;
+	display: inline-block;
+	margin-top: 50px;
+	font-weight:bold;
+
+
+
+}
+
+#sign{
+	background-image:url(../images/line.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	height: 30px;
+	width: 207px;
+	display: inline-block;
+	font-family: "Courier New", monospace;
+	font-weight: normal;
+	font-size: 25px;
+
 
 }
 /* Ion.RangeSlider
@@ -267,7 +322,7 @@ header{
 	max-width: 750px;
 	margin: 0 auto;
 	padding-top: 20px;
-
+	font-weight: bold;
 
 }
 .irs {
@@ -414,6 +469,8 @@ header{
 	height: 121px;
 	width: 272px;
 	float: right;
+	margin-right: -80px;
+	margin-top: -30px;
 
 
 }
@@ -536,7 +593,5 @@ header{
 .lt-ie9 .irs-disabled {
 
 }
-
-
 
 

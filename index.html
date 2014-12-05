@@ -32,7 +32,7 @@
 			<div class="wrapper">
 			<div class="secret"></div>
 			<div class="logo"></div><a href="#" title="Дело"><h1 class="h1 case">Дело</h1></a>
-
+				<form id="main-form" method="post">
 			<ul class="list">
 				<li class="fio">
 					<p>Полное ФИО</p>
@@ -55,17 +55,21 @@
 					<div class="item"><input type="email" placeholder="topwebmasterblog@gmail.com"></div>
 				</li>
 				<li class="spec">
-					<form>
+
 						<span>Выпускник</span>  <a href="//htmlacademy.ru"> htmlacademy.ru</a>
-						<input type="radio" id="yes" value="yes" name="htmlacademy">
-						<label for="yes">Да</label>
-						<span><input type="radio" id="no" value="no" name="htmlacademy"></span>
-						<label for="no">Нет</label>
-					</form>
+						<input type="radio" id="r-yes" value="yes" name="htmlacademy">
+						<label for="r-yes">
+							<span id="yes"onclick="radioYes()"></span> Да
+						</label>
+						<input type="radio" id="r-no" value="no" name="htmlacademy">
+						<label for="r-no"  >
+							<span id="no" onclick="radioNo()"></span>Нет
+						</label>
+
 				</li>
 			</ul>
-			<div class="webmaster">
-				<form class="form" method="post">
+
+
 					<div class="skills">
 						<header>
 							<h2>Практические навыки</h2>
@@ -79,60 +83,60 @@
 						<div class="column1">
 							<ul>
 								<li>
-									<input id="methods-bam" type="checkbox" value="methods-bam">
-										<label for="methods-bam">Методология БЭМ</label>
+									<input class="CheckBoxClass" id="methods-bam" type="checkbox" value="methods-bam">
+									<label id="Label" class="CheckBoxLabelClass" for="methods-bam" >Методология БЭМ</label>
 								</li>
 								<li>
-									<input id="jQuery" type="checkbox" value="jQuery" checked>
-										<label for="jQuery">jQuery</label>
+									<input class="CheckBoxClass" id="jQuery" type="checkbox" value="jQuery" checked>
+										<label class="CheckBoxLabelClass" for="jQuery">jQuery</label>
 								</li>
 								<li>
-									<input id="GRUNT" type="checkbox" value="GRUNT" >
-										<label for="GRUNT">Использую GRUNT</label>
+									<input class="CheckBoxClass" id="GRUNT" type="checkbox" value="GRUNT" >
+										<label class="CheckBoxLabelClass" for="GRUNT">Использую GRUNT</label>
 								</li>
 								<li>
-									<input id="HAML" type="checkbox" value="HAML" >
-										<label for="HAML">HAML</label>
+									<input class="CheckBoxClass" id="HAML" type="checkbox" value="HAML" >
+										<label class="CheckBoxLabelClass" for="HAML">HAML</label>
 								</li>
 								<li>
-									<input id="LESS" type="checkbox" value="LESS" checked>
-										<label for="LESS">LESS</label>
+									<input class="CheckBoxClass"  id="LESS" type="checkbox" value="LESS" checked>
+										<label class="CheckBoxLabelClass" for="LESS">LESS</label>
 								</li>
 								<li>
-									<input id="SASS" type="checkbox" value="SASS">
-										<label for="SASS">SASS</label>
+									<input class="CheckBoxClass" id="SASS" type="checkbox" value="SASS">
+										<label class="CheckBoxLabelClass" for="SASS">SASS</label>
 								</li>
 								<li>
-									<input id="CoffeeScript" type="checkbox" value="CoffeeScript">
-										<label for="CoffeeScript">CoffeeScript</label>
+									<input class="CheckBoxClass" id="CoffeeScript" type="checkbox" value="CoffeeScript">
+										<label class="CheckBoxLabelClass" for="CoffeeScript">CoffeeScript</label>
 								</li>
 							</ul>
 						</div>
 						<div class="column2">
 							<ul>
 								<li>
-									<input id="Jade" type="checkbox" value="Jade" checked>
-										<label for="Jade">Jade</label>
+									<input class="CheckBoxClass" id="Jade" type="checkbox" value="Jade" checked>
+										<label class="CheckBoxLabelClass" for="Jade">Jade</label>
 								</li>
 								<li>
-									<input id="Stylus" type="checkbox" value="Stylus" checked>
-										<label for="Stylus">Stylus</label>
+									<input class="CheckBoxClass" id="Stylus" type="checkbox" value="Stylus" checked>
+										<label class="CheckBoxLabelClass" for="Stylus">Stylus</label>
 								</li>
 								<li>
-									<input id="Angular" type="checkbox" value="Angular" checked>
-										<label for="Angular">Знаю (изучаю) Angular</label>
+									<input class="CheckBoxClass" id="Angular" type="checkbox" value="Angular" checked>
+										<label class="CheckBoxLabelClass" for="Angular">Знаю (изучаю) Angular</label>
 								</li>
 								<li>
-									<input id="Android" type="checkbox" value="Android">
-										<label for="Android">Верстка под Android</label>
+									<input class="CheckBoxClass" id="Android" type="checkbox" value="Android">
+										<label class="CheckBoxLabelClass" for="Android">Верстка под Android</label>
 								</li>
 								<li>
-									<input id="iOS" type="checkbox" value="iOS">
-										<label for="iOS">Верстка под iOS</label>
+									<input class="CheckBoxClass" id="iOS" type="checkbox" value="iOS">
+										<label class="CheckBoxLabelClass" for="iOS">Верстка под iOS</label>
 								</li>
 								<li>
-									<input id="wphone" type="checkbox" value="wphone">
-										<label for="wphone">Верстка под Windows Phone</label>
+									<input class="CheckBoxClass" id="wphone" type="checkbox" value="wphone">
+										<label class="CheckBoxLabelClass" for="wphone">Верстка под Windows Phone</label>
 								</li>
 
 							</ul>
@@ -140,24 +144,24 @@
 						<div class="column3">
 							<ul>
 								<li>
-									<input id="layout-mailings" type="checkbox" value="layout-mailings">
-										<label for="layout-mailings">Верстка рассылок</label>
+									<input class="CheckBoxClass" id="layout-mailings" type="checkbox" value="layout-mailings">
+										<label class="CheckBoxLabelClass" for="layout-mailings">Верстка рассылок</label>
 								</li>
 								<li>
-									<input id="adaptive" type="checkbox" value="adaptive" checked>
-										<label for="adaptive">Адаптивная верстка</label>
+									<input class="CheckBoxClass" id="adaptive" type="checkbox" value="adaptive" checked>
+										<label  class="CheckBoxLabelClass" for="adaptive">Адаптивная верстка</label>
 								</li>
 								<li>
-									<input id="dropbox" type="checkbox" value="dropbox" checked>
-										<label for="dropbox">Использую Dropbox</label>
+									<input class="CheckBoxClass" id="dropbox" type="checkbox" value="dropbox" checked>
+										<label class="CheckBoxLabelClass" for="dropbox">Использую Dropbox</label>
 								</li>
 								<li>
-									<input id="gmail" type="checkbox" value="gmail" checked>
-										<label for="gmail">Использую Gmail</label>
+									<input class="CheckBoxClass" id="gmail" type="checkbox" value="gmail" checked>
+										<label class="CheckBoxLabelClass" for="gmail">Использую Gmail</label>
 								</li>
 								<li>
-									<input id="github" type="checkbox" value="github" checked>
-										<label for="github">Использую GitHub</label>
+									<input class="CheckBoxClass" id="github" type="checkbox" value="github" checked>
+										<label  class="CheckBoxLabelClass" for="github">Использую GitHub</label>
 								</li>
 							</ul>
 						</div>
@@ -168,34 +172,17 @@
 					</div>
 				</form>
 
-			</div>
-			<div class="sign">
-				<div class="date">Дата заполнения</div>
-				<span></span>
-			</div>
+
+				<div class="sign">
+					<label for="sign" class="date">Дата заполнения</label>
+					<input id="sign" type="date" placeholder="5.12.2014">
+				</div>
+		</form>
+
 	</div>
 </div>
 		<script src="assets/scripts/libs/jquery-1.11.1.js"></script>
 		<script src="assets/scripts/common.js"></script>
-		<script>
-			$(function () {
-
-				$("#range").ionRangeSlider({
-					grid_snap:true,
-					from_shadow:true,
-					hide_from_to:true,
-					hide_min_max: true,
-					grid: true,
-					from: 2,
-					values: [
-						"Не умею", "Использую готовые решения","Использую готовые решения</br> и умею их переделывать", "Пишу сложные скрипты"
-					]
-				});
-
-			});
-
-
-
-		</script>
+	
 	</body>
 </html>

@@ -676,3 +676,58 @@
         })
     })()
 })(jQuery, document, window, navigator);
+$(function () {
+
+                $("#range").ionRangeSlider({
+                    grid_snap:true,
+                    from_shadow:true,
+                    hide_from_to:true,
+                    hide_min_max: true,
+                    grid: true,
+                    from: 2,
+                    values: [
+                        "Не умею", "Использую готовые решения","Использую готовые решения</br> и умею их переделывать", "Пишу сложные скрипты"
+                    ]
+                });
+
+            });
+// radio button
+
+function radioYes() {
+    var yes = document.getElementById('yes');
+    var no = document.getElementById('no');
+    yes.style.background='url("assets/images/yes.png") no-repeat';
+    no.style.background='url("assets/images/no.png") no-repeat';
+}
+function radioNo() {
+    var yes = document.getElementById('yes');
+    var no = document.getElementById('no');
+    no.style.background='url("assets/images/yes.png") no-repeat';
+    yes.style.background='url("assets/images/no.png") no-repeat';
+}
+
+/*function checked(){
+    var check = document.getElementById('check');
+    check.style.background='url("assets/images/checked.png") no-repeat'
+
+
+}*/
+
+
+   
+
+$(document).ready(function(){
+$(function(){
+    $("input:checkbox:checked").each(
+        function(){
+        $(this).next("label").addClass("LabelSelected");});//TODO при перезагрузке страницы нужно возвращать в исходное состояние, сейчас остаётся в выбранном состоянии
+});
+
+        $(".CheckBoxClass").on("click",function(){
+            if($(this).is(":checked")){
+                $(this).next("label").addClass("LabelSelected");
+            }else{
+                $(this).next("label").removeClass("LabelSelected");
+            }
+        });
+    });
