@@ -24,53 +24,42 @@
 		<meta name="keywords" content="csssr, project, template, frontend, grunt, jade, stylus">
 		<meta name="copyright" content="©CSSSR">
 		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
-		<link href="assets/styles/common.css?1417547563498" rel="stylesheet">
+		<link href="assets/styles/common.css" rel="stylesheet">
+		<link href="assets/styles/normalize.css" rel="stylesheet">
 	</head>
 	<body>
 		<div class="main">
+			<div class="wrapper">
 			<div class="secret"></div>
 			<div class="logo"></div><a href="#" title="Дело"><h1 class="h1 case">Дело</h1></a>
 
 			<ul class="list">
-				<li class="list fio">
-					<span>Полное ФИО</span>
-					<div class="line-container">
-						<span class="item1"> Петров Дмтрий Юрьевич</span>
-						<span class="underline"></span>
-					</div>
+				<li class="fio">
+					<p>Полное ФИО</p>
+					<div class="item"><input type="text" placeholder="Петров Дмитрий Юрьевич"></div>
 				</li>
-				<li class="list year">
-					<span>Год рождения</span>
-					<div class="line-container">
-						<span class="item1"> 1984</span>
-						<span class="underline"></span>
-					</div>
+				<li class="year">
+					<p >Год рождения</p>
+					<div class="item"><input type="text" placeholder="1984">	</div>
 				</li>
-				<li class="list city">
-					<span>Место жительства</span>
-					<div class="line-container">
-						<span class="item1"> г. Севастополь, Россия</span>
-						<span class="underline"></span>
-					</div>
+				<li class="city">
+					<p>Место жительства</p>
+					<div class="item"><input type="text" placeholder="г.Севастополь, Россия"></div>
 				</li>
-				<li class="list skype"><span>Скайп</span>
-					<div class="line-container">
-						<span class="item1"> topwebmaster</span>
-						<span class="underline"></span>
-					</div>
+				<li class="skype">
+					<p>Скайп</p>
+					<div class="item"><input type="text" placeholder="topwebmaster"></div>
 				</li>
-				<li class="list e-mail"><span>Почта</span>
-					<div class="line-container">
-						<span class="item1"> topwebmasterblog@gmail.com</span>
-						<span class="underline"></span>
-					</div>
+				<li class="email">
+					<p>Почта </p>
+					<div class="item"><input type="email" placeholder="topwebmasterblog@gmail.com"></div>
 				</li>
-				<li>
+				<li class="spec">
 					<form>
-						Выпускник  <a href="//htmlacademy.ru"> htmlacademy.ru</a>
+						<span>Выпускник</span>  <a href="//htmlacademy.ru"> htmlacademy.ru</a>
 						<input type="radio" id="yes" value="yes" name="htmlacademy">
 						<label for="yes">Да</label>
-						<input type="radio" id="no" value="no" name="htmlacademy">
+						<span><input type="radio" id="no" value="no" name="htmlacademy"></span>
 						<label for="no">Нет</label>
 					</form>
 				</li>
@@ -174,6 +163,7 @@
 						</div>
 					</div>
 					<div class="slider-container">
+						<p>Уровень владения JavaScript</p>
 						<input type="text" id="range" value="" name="range" />
 					</div>
 				</form>
@@ -183,6 +173,7 @@
 				<div class="date">Дата заполнения</div>
 				<span></span>
 			</div>
+	</div>
 </div>
 		<script src="assets/scripts/libs/jquery-1.11.1.js"></script>
 		<script src="assets/scripts/common.js"></script>
